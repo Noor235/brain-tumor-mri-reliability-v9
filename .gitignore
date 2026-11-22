@@ -1,0 +1,42 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# MRI datasets and sample images
+data/
+uncertainty_lab_samples/
+PREVIEW_Three_Real_V9_MRIs.png
+figure_3_3_real_preprocessing.png
+
+# Experimental outputs (selected results added later)
+results/
+
+# Large model files
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.h5
+*.mat
+
+# Temporary files and databases
+*.sqlite3
+*.db
+*.log
+/v9\ 
+
+*.backup
+
+*.backup
