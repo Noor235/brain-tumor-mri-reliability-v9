@@ -1,0 +1,89 @@
+{
+  "comparison": "Existing corrected Grad-CAM vs HiResCAM, V9 1374-image exploratory held-out test",
+  "n": 1374,
+  "source_gradcam": "/Users/noorhawari/Desktop/Thesis/Brain_Tumor_Reproduction_V9/results/gradcam_features4_full_test/earlier/per_image_reliability_profile.csv",
+  "source_hirescam": "/Users/noorhawari/Desktop/Thesis/Brain_Tumor_Reproduction_V9/results/33_hirescam_full_test/earlier/per_image_reliability_profile.csv",
+  "paired_metric_differences": [
+    {
+      "metric": "faithfulness_del_high_minus_random_20",
+      "description": "Deletion advantage",
+      "interpretation": "higher",
+      "n": 1374,
+      "gradcam_mean": 5.007279674079705,
+      "hirescam_mean": 6.567419760484674,
+      "hirescam_minus_gradcam_bootstrap_95ci": [
+        1.5601400864049684,
+        1.3235599484805909,
+        1.8070812733362573
+      ],
+      "correct_mean_difference": 1.5568841259487751,
+      "incorrect_mean_difference": 1.7111492868732379
+    },
+    {
+      "metric": "faithfulness_ins_high_minus_random_20",
+      "description": "Insertion advantage",
+      "interpretation": "higher",
+      "n": 1374,
+      "gradcam_mean": 4.8774522526340025,
+      "hirescam_mean": 6.5269299197820985,
+      "hirescam_minus_gradcam_bootstrap_95ci": [
+        1.6494776671480957,
+        1.4236693549816228,
+        1.8687364244281885
+      ],
+      "correct_mean_difference": 1.6647851352985497,
+      "incorrect_mean_difference": 0.939527851204624
+    },
+    {
+      "metric": "mean_stability_cosine",
+      "description": "Mean stability cosine",
+      "interpretation": "higher",
+      "n": 1374,
+      "gradcam_mean": 0.9797175724097474,
+      "hirescam_mean": 0.9787546141967393,
+      "hirescam_minus_gradcam_bootstrap_95ci": [
+        -0.0009629582130082713,
+        -0.0018636986583122717,
+        -7.463050154557833e-05
+      ],
+      "correct_mean_difference": -0.0009635325579487116,
+      "incorrect_mean_difference": -0.0009363204907706063
+    },
+    {
+      "metric": "mean_stability_top20_iou",
+      "description": "Stability top-20% overlap",
+      "interpretation": "higher",
+      "n": 1374,
+      "gradcam_mean": 0.8445193241833404,
+      "hirescam_mean": 0.8482624996504718,
+      "hirescam_minus_gradcam_bootstrap_95ci": [
+        0.0037431754671315444,
+        0.0014532084653458915,
+        0.006323052158182456
+      ],
+      "correct_mean_difference": 0.003777037728910121,
+      "incorrect_mean_difference": 0.0021726671191251348
+    },
+    {
+      "metric": "explanation_shape_uncertainty",
+      "description": "MC CAM spatial std",
+      "interpretation": "descriptive",
+      "n": 1374,
+      "gradcam_mean": 0.015552596861562316,
+      "hirescam_mean": 0.008283749636563607,
+      "hirescam_minus_gradcam_bootstrap_95ci": [
+        -0.007268847224998709,
+        -0.007626449372870819,
+        -0.006893970752745168
+      ],
+      "correct_mean_difference": -0.007310809671305827,
+      "incorrect_mean_difference": -0.005322657904892774
+    }
+  ],
+  "cautions": [
+    "Do not treat test-data comparisons as independent model selection or external confirmation.",
+    "Bootstrap intervals resample images, not patients; repeated patient identities are unknown.",
+    "The original Step 22 patchwise protocol is held fixed here; its scores are not directly comparable with Step 30 validation pixel-mask scores.",
+    "Lower explanation shape std is not proof of tumour localization or fewer diagnosis errors."
+  ]
+}

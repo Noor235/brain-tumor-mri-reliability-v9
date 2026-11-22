@@ -1,0 +1,838 @@
+{
+  "analysis": "Post-hoc exploratory full TEST reliability profiling",
+  "completed_utc": "2026-11-19T19:41:55.746587+00:00",
+  "complete": true,
+  "matched_images": 1374,
+  "test_split_count": 1374,
+  "layer": "earlier",
+  "split_fingerprint": "1e9c3dd029c885ee29a5f3df47a4b8537408b4a25bc59311dbfde39ed20ef799",
+  "correct": 1345,
+  "incorrect": 29,
+  "overall": {
+    "raw_confidence": {
+      "n": 1374,
+      "mean": 0.9934636183002884,
+      "median": 0.9999995767299776
+    },
+    "calibrated_confidence": {
+      "n": 1374,
+      "mean": 0.9802215038247273,
+      "median": 0.9976890318563826
+    },
+    "mc_mean_confidence": {
+      "n": 1374,
+      "mean": 0.9930912734352257,
+      "median": 0.9999993
+    },
+    "mc_predictive_entropy": {
+      "n": 1374,
+      "mean": 0.016343516688500728,
+      "median": 1.0775000000000001e-05
+    },
+    "mc_mutual_information": {
+      "n": 1374,
+      "mean": 0.0006509081877729257,
+      "median": 2.8e-07
+    },
+    "mc_variance_predicted_class": {
+      "n": 1374,
+      "mean": 0.00019752415283842795,
+      "median": 0.0
+    },
+    "faithfulness_del_high_20": {
+      "n": 1374,
+      "mean": 10.054215083900369,
+      "median": 8.665852048828317
+    },
+    "faithfulness_del_random_20": {
+      "n": 1374,
+      "mean": 3.4867953234156954,
+      "median": 2.888404542660167
+    },
+    "faithfulness_del_low_20": {
+      "n": 1374,
+      "mean": 0.03336836966296014,
+      "median": -0.04948559006790365
+    },
+    "faithfulness_del_high_minus_random_20": {
+      "n": 1374,
+      "mean": 6.567419760484674,
+      "median": 5.415273164697188
+    },
+    "faithfulness_ins_high_20": {
+      "n": 1374,
+      "mean": 8.250536629325733,
+      "median": 8.55005651310019
+    },
+    "faithfulness_ins_random_20": {
+      "n": 1374,
+      "mean": 1.7236067095436354,
+      "median": 2.239409491625236
+    },
+    "faithfulness_ins_high_minus_random_20": {
+      "n": 1374,
+      "mean": 6.5269299197820985,
+      "median": 5.95651630479072
+    },
+    "mean_stability_cosine": {
+      "n": 1374,
+      "mean": 0.9787546141967393,
+      "median": 0.9811928275785704
+    },
+    "mean_stability_pearson": {
+      "n": 1374,
+      "mean": 0.9700832240444283,
+      "median": 0.9732577517730188
+    },
+    "mean_stability_top20_iou": {
+      "n": 1374,
+      "mean": 0.8482624996504718,
+      "median": 0.8519133815511051
+    },
+    "stability_prediction_flip_count": {
+      "n": 1374,
+      "mean": 0.00727802037845706,
+      "median": 0.0
+    },
+    "explanation_shape_uncertainty": {
+      "n": 1374,
+      "mean": 0.008283749636563607,
+      "median": 0.007533619413152337
+    },
+    "explanation_raw_attribution_std": {
+      "n": 1374,
+      "mean": 0.006677280734442283,
+      "median": 0.006484565092250705
+    },
+    "explanation_mc_class_flip_rate": {
+      "n": 1374,
+      "mean": 0.002438136826783115,
+      "median": 0.0
+    },
+    "explanation_mean_cosine_to_first": {
+      "n": 1374,
+      "mean": 0.9929068020482642,
+      "median": 0.9941244216823428
+    }
+  },
+  "correct_group": {
+    "raw_confidence": {
+      "n": 1345,
+      "mean": 0.9973546768915452,
+      "median": 0.9999995996316882
+    },
+    "calibrated_confidence": {
+      "n": 1345,
+      "mean": 0.9862362889440148,
+      "median": 0.997764017159391
+    },
+    "mc_mean_confidence": {
+      "n": 1345,
+      "mean": 0.9972466712267657,
+      "median": 0.9999994
+    },
+    "mc_predictive_entropy": {
+      "n": 1345,
+      "mean": 0.007805226565055761,
+      "median": 1.008e-05
+    },
+    "mc_mutual_information": {
+      "n": 1345,
+      "mean": 0.00031087078810408924,
+      "median": 2.7e-07
+    },
+    "mc_variance_predicted_class": {
+      "n": 1345,
+      "mean": 7.797255390334573e-05,
+      "median": 0.0
+    },
+    "faithfulness_del_high_20": {
+      "n": 1345,
+      "mean": 10.111082382660005,
+      "median": 8.68712611619511
+    },
+    "faithfulness_del_random_20": {
+      "n": 1345,
+      "mean": 3.5012124593814713,
+      "median": 2.8891503686369173
+    },
+    "faithfulness_del_low_20": {
+      "n": 1345,
+      "mean": 0.05321888346865858,
+      "median": -0.027416435820956764
+    },
+    "faithfulness_del_high_minus_random_20": {
+      "n": 1345,
+      "mean": 6.609869923278533,
+      "median": 5.4206116081115745
+    },
+    "faithfulness_ins_high_20": {
+      "n": 1345,
+      "mean": 8.322749803265397,
+      "median": 8.61090638442012
+    },
+    "faithfulness_ins_random_20": {
+      "n": 1345,
+      "mean": 1.771722304633986,
+      "median": 2.317546771574222
+    },
+    "faithfulness_ins_high_minus_random_20": {
+      "n": 1345,
+      "mean": 6.551027498631412,
+      "median": 5.962182897436273
+    },
+    "mean_stability_cosine": {
+      "n": 1345,
+      "mean": 0.9786447600829161,
+      "median": 0.9811286481592618
+    },
+    "mean_stability_pearson": {
+      "n": 1345,
+      "mean": 0.9699139456833468,
+      "median": 0.9730947571402861
+    },
+    "mean_stability_top20_iou": {
+      "n": 1345,
+      "mean": 0.8478450668783425,
+      "median": 0.8512748356403809
+    },
+    "stability_prediction_flip_count": {
+      "n": 1345,
+      "mean": 0.0037174721189591076,
+      "median": 0.0
+    },
+    "explanation_shape_uncertainty": {
+      "n": 1345,
+      "mean": 0.008336631455900127,
+      "median": 0.007620407734066248
+    },
+    "explanation_raw_attribution_std": {
+      "n": 1345,
+      "mean": 0.006678836570609513,
+      "median": 0.006493435241281986
+    },
+    "explanation_mc_class_flip_rate": {
+      "n": 1345,
+      "mean": 0.000892193308550186,
+      "median": 0.0
+    },
+    "explanation_mean_cosine_to_first": {
+      "n": 1345,
+      "mean": 0.9928493349014933,
+      "median": 0.9940685034386301
+    }
+  },
+  "incorrect_group": {
+    "raw_confidence": {
+      "n": 29,
+      "mean": 0.8129990043264802,
+      "median": 0.8829052104666997
+    },
+    "calibrated_confidence": {
+      "n": 29,
+      "mean": 0.7012599181198491,
+      "median": 0.653804086028121
+    },
+    "mc_mean_confidence": {
+      "n": 29,
+      "mean": 0.8003667896551726,
+      "median": 0.8420439
+    },
+    "mc_predictive_entropy": {
+      "n": 29,
+      "mean": 0.4123435241379311,
+      "median": 0.46893713
+    },
+    "mc_mutual_information": {
+      "n": 29,
+      "mean": 0.016421608275862067,
+      "median": 0.01083291
+    },
+    "mc_variance_predicted_class": {
+      "n": 29,
+      "mean": 0.005742244862068966,
+      "median": 0.004701418
+    },
+    "faithfulness_del_high_20": {
+      "n": 29,
+      "mean": 7.416748986255222,
+      "median": 6.9109413087732054
+    },
+    "faithfulness_del_random_20": {
+      "n": 29,
+      "mean": 2.81813850017539,
+      "median": 2.85351750330634
+    },
+    "faithfulness_del_low_20": {
+      "n": 29,
+      "mean": -0.8872847706358113,
+      "median": -1.013015549801175
+    },
+    "faithfulness_del_high_minus_random_20": {
+      "n": 29,
+      "mean": 4.598610486079832,
+      "median": 5.16464144947101
+    },
+    "faithfulness_ins_high_20": {
+      "n": 29,
+      "mean": 4.901339424193014,
+      "median": 5.052797134967225
+    },
+    "faithfulness_ins_random_20": {
+      "n": 29,
+      "mean": -0.5079614075778002,
+      "median": -0.7603933874607948
+    },
+    "faithfulness_ins_high_minus_random_20": {
+      "n": 29,
+      "mean": 5.409300831770813,
+      "median": 5.045914967922579
+    },
+    "mean_stability_cosine": {
+      "n": 29,
+      "mean": 0.9838495722343924,
+      "median": 0.9854231360880638
+    },
+    "mean_stability_pearson": {
+      "n": 29,
+      "mean": 0.9779342376877028,
+      "median": 0.9827048421947399
+    },
+    "mean_stability_top20_iou": {
+      "n": 29,
+      "mean": 0.8676227437371522,
+      "median": 0.8735105690491086
+    },
+    "stability_prediction_flip_count": {
+      "n": 29,
+      "mean": 0.1724137931034483,
+      "median": 0.0
+    },
+    "explanation_shape_uncertainty": {
+      "n": 29,
+      "mean": 0.005831127325956035,
+      "median": 0.004478173796087503
+    },
+    "explanation_raw_attribution_std": {
+      "n": 29,
+      "mean": 0.006605122125996598,
+      "median": 0.006447875406593084
+    },
+    "explanation_mc_class_flip_rate": {
+      "n": 29,
+      "mean": 0.07413793103448275,
+      "median": 0.0
+    },
+    "explanation_mean_cosine_to_first": {
+      "n": 29,
+      "mean": 0.995572088682975,
+      "median": 0.9966825359605549
+    }
+  },
+  "by_true_class": {
+    "glioma": {
+      "n": 355,
+      "stats": {
+        "raw_confidence": {
+          "n": 355,
+          "mean": 0.99212235166867,
+          "median": 0.9999998531701211
+        },
+        "calibrated_confidence": {
+          "n": 355,
+          "mean": 0.9788539284119144,
+          "median": 0.998295202248357
+        },
+        "mc_mean_confidence": {
+          "n": 355,
+          "mean": 0.991562492112676,
+          "median": 0.9999998
+        },
+        "mc_predictive_entropy": {
+          "n": 355,
+          "mean": 0.019520110084507044,
+          "median": 4.64e-06
+        },
+        "mc_mutual_information": {
+          "n": 355,
+          "mean": 0.0009268881971830986,
+          "median": 1.4e-07
+        },
+        "mc_variance_predicted_class": {
+          "n": 355,
+          "mean": 0.00028079571830985915,
+          "median": 0.0
+        },
+        "faithfulness_del_high_20": {
+          "n": 355,
+          "mean": 9.208346880102612,
+          "median": 8.52517195410746
+        },
+        "faithfulness_del_random_20": {
+          "n": 355,
+          "mean": 4.182408646941271,
+          "median": 3.36534107751314
+        },
+        "faithfulness_del_low_20": {
+          "n": 355,
+          "mean": 0.3025941979552861,
+          "median": 0.00719320881075447
+        },
+        "faithfulness_del_high_minus_random_20": {
+          "n": 355,
+          "mean": 5.025938233161341,
+          "median": 4.670373584068585
+        },
+        "faithfulness_ins_high_20": {
+          "n": 355,
+          "mean": 10.537622618338045,
+          "median": 10.8796060611641
+        },
+        "faithfulness_ins_random_20": {
+          "n": 355,
+          "mean": 3.309815201931979,
+          "median": 3.400891071933229
+        },
+        "faithfulness_ins_high_minus_random_20": {
+          "n": 355,
+          "mean": 7.227807416406066,
+          "median": 7.377411165754689
+        },
+        "mean_stability_cosine": {
+          "n": 355,
+          "mean": 0.9807554412038121,
+          "median": 0.9837938520451717
+        },
+        "mean_stability_pearson": {
+          "n": 355,
+          "mean": 0.9726561390534698,
+          "median": 0.9775372147102193
+        },
+        "mean_stability_top20_iou": {
+          "n": 355,
+          "mean": 0.8606413566583164,
+          "median": 0.8648502152177014
+        },
+        "stability_prediction_flip_count": {
+          "n": 355,
+          "mean": 0.005633802816901409,
+          "median": 0.0
+        },
+        "explanation_shape_uncertainty": {
+          "n": 355,
+          "mean": 0.009713798744315412,
+          "median": 0.009270708076655865
+        },
+        "explanation_raw_attribution_std": {
+          "n": 355,
+          "mean": 0.006395016542412865,
+          "median": 0.006266205105930567
+        },
+        "explanation_mc_class_flip_rate": {
+          "n": 355,
+          "mean": 0.0025352112676056337,
+          "median": 0.0
+        },
+        "explanation_mean_cosine_to_first": {
+          "n": 355,
+          "mean": 0.990412071304129,
+          "median": 0.9920421232065038
+        }
+      }
+    },
+    "meningioma": {
+      "n": 336,
+      "stats": {
+        "raw_confidence": {
+          "n": 336,
+          "mean": 0.99252067302885,
+          "median": 0.9999997894767653
+        },
+        "calibrated_confidence": {
+          "n": 336,
+          "mean": 0.9729167816993373,
+          "median": 0.9983090095708256
+        },
+        "mc_mean_confidence": {
+          "n": 336,
+          "mean": 0.992155792857143,
+          "median": 0.9999997
+        },
+        "mc_predictive_entropy": {
+          "n": 336,
+          "mean": 0.019820123273809526,
+          "median": 5.755e-06
+        },
+        "mc_mutual_information": {
+          "n": 336,
+          "mean": 0.0005823223511904762,
+          "median": 1.7000000000000001e-07
+        },
+        "mc_variance_predicted_class": {
+          "n": 336,
+          "mean": 0.00015359170833333335,
+          "median": 0.0
+        },
+        "faithfulness_del_high_20": {
+          "n": 336,
+          "mean": 15.997135367454169,
+          "median": 16.206398236431205
+        },
+        "faithfulness_del_random_20": {
+          "n": 336,
+          "mean": 4.003230463215395,
+          "median": 3.1053062609163993
+        },
+        "faithfulness_del_low_20": {
+          "n": 336,
+          "mean": -0.3450323561951326,
+          "median": -0.5011603282229355
+        },
+        "faithfulness_del_high_minus_random_20": {
+          "n": 336,
+          "mean": 11.993904904238775,
+          "median": 11.924112217577832
+        },
+        "faithfulness_ins_high_20": {
+          "n": 336,
+          "mean": 9.705246305913878,
+          "median": 9.908653437062146
+        },
+        "faithfulness_ins_random_20": {
+          "n": 336,
+          "mean": -2.8611303646472073,
+          "median": -3.11631681978057
+        },
+        "faithfulness_ins_high_minus_random_20": {
+          "n": 336,
+          "mean": 12.566376670561086,
+          "median": 12.868040651710842
+        },
+        "mean_stability_cosine": {
+          "n": 336,
+          "mean": 0.9856650991666097,
+          "median": 0.9891270879804805
+        },
+        "mean_stability_pearson": {
+          "n": 336,
+          "mean": 0.9825094659550325,
+          "median": 0.9877786978989382
+        },
+        "mean_stability_top20_iou": {
+          "n": 336,
+          "mean": 0.8583627546571247,
+          "median": 0.8606493481142314
+        },
+        "stability_prediction_flip_count": {
+          "n": 336,
+          "mean": 0.011904761904761904,
+          "median": 0.0
+        },
+        "explanation_shape_uncertainty": {
+          "n": 336,
+          "mean": 0.003814518532245919,
+          "median": 0.0027546591591089964
+        },
+        "explanation_raw_attribution_std": {
+          "n": 336,
+          "mean": 0.00797721371609008,
+          "median": 0.007988279685378075
+        },
+        "explanation_mc_class_flip_rate": {
+          "n": 336,
+          "mean": 0.003125,
+          "median": 0.0
+        },
+        "explanation_mean_cosine_to_first": {
+          "n": 336,
+          "mean": 0.9961969242695606,
+          "median": 0.9975057047107843
+        }
+      }
+    },
+    "notumor": {
+      "n": 331,
+      "stats": {
+        "raw_confidence": {
+          "n": 331,
+          "mean": 0.9931833182029514,
+          "median": 0.9999983741114736
+        },
+        "calibrated_confidence": {
+          "n": 331,
+          "mean": 0.9796361472966644,
+          "median": 0.9962312410299143
+        },
+        "mc_mean_confidence": {
+          "n": 331,
+          "mean": 0.9928418513595166,
+          "median": 0.9999979
+        },
+        "mc_predictive_entropy": {
+          "n": 331,
+          "mean": 0.017248893595166164,
+          "median": 3.206e-05
+        },
+        "mc_mutual_information": {
+          "n": 331,
+          "mean": 0.0007977241691842901,
+          "median": 7.5e-07
+        },
+        "mc_variance_predicted_class": {
+          "n": 331,
+          "mean": 0.00024508322658610274,
+          "median": 0.0
+        },
+        "faithfulness_del_high_20": {
+          "n": 331,
+          "mean": 6.36299344540132,
+          "median": 5.594694873731001
+        },
+        "faithfulness_del_random_20": {
+          "n": 331,
+          "mean": 2.1029982131584353,
+          "median": 1.9919195309993025
+        },
+        "faithfulness_del_low_20": {
+          "n": 331,
+          "mean": 0.39818844536811004,
+          "median": 0.24892378608986476
+        },
+        "faithfulness_del_high_minus_random_20": {
+          "n": 331,
+          "mean": 4.259995232242886,
+          "median": 3.5352065808176683
+        },
+        "faithfulness_ins_high_20": {
+          "n": 331,
+          "mean": 5.145086646806109,
+          "median": 5.41498801022339
+        },
+        "faithfulness_ins_random_20": {
+          "n": 331,
+          "mean": 1.6823865033640468,
+          "median": 1.5699950807847123
+        },
+        "faithfulness_ins_high_minus_random_20": {
+          "n": 331,
+          "mean": 3.4627001434420617,
+          "median": 3.624772819347932
+        },
+        "mean_stability_cosine": {
+          "n": 331,
+          "mean": 0.9738893646812654,
+          "median": 0.976640050676972
+        },
+        "mean_stability_pearson": {
+          "n": 331,
+          "mean": 0.9644204074498662,
+          "median": 0.9686343868523579
+        },
+        "mean_stability_top20_iou": {
+          "n": 331,
+          "mean": 0.8432991463618307,
+          "median": 0.8468918114488263
+        },
+        "stability_prediction_flip_count": {
+          "n": 331,
+          "mean": 0.006042296072507553,
+          "median": 0.0
+        },
+        "explanation_shape_uncertainty": {
+          "n": 331,
+          "mean": 0.007668281453056683,
+          "median": 0.0070565673522651196
+        },
+        "explanation_raw_attribution_std": {
+          "n": 331,
+          "mean": 0.005421427463313559,
+          "median": 0.00525328703224659
+        },
+        "explanation_mc_class_flip_rate": {
+          "n": 331,
+          "mean": 0.00256797583081571,
+          "median": 0.0
+        },
+        "explanation_mean_cosine_to_first": {
+          "n": 331,
+          "mean": 0.9935861157078063,
+          "median": 0.9944508012049452
+        }
+      }
+    },
+    "pituitary": {
+      "n": 352,
+      "stats": {
+        "raw_confidence": {
+          "n": 352,
+          "mean": 0.9959799779526924,
+          "median": 0.9999997711021309
+        },
+        "calibrated_confidence": {
+          "n": 352,
+          "mean": 0.9891238587010579,
+          "median": 0.9980820107605186
+        },
+        "mc_mean_confidence": {
+          "n": 352,
+          "mean": 0.9957605846590909,
+          "median": 0.9999996
+        },
+        "mc_predictive_entropy": {
+          "n": 352,
+          "mean": 0.00896990809659091,
+          "median": 7.805e-06
+        },
+        "mc_mutual_information": {
+          "n": 352,
+          "mean": 0.0002999873011363636,
+          "median": 2.2e-07
+        },
+        "mc_variance_predicted_class": {
+          "n": 352,
+          "mean": 0.00011075665909090908,
+          "median": 0.0
+        },
+        "faithfulness_del_high_20": {
+          "n": 352,
+          "mean": 8.705511559517733,
+          "median": 8.303099894172798
+        },
+        "faithfulness_del_random_20": {
+          "n": 352,
+          "mean": 3.5935336946397722,
+          "median": 3.652749802846455
+        },
+        "faithfulness_del_low_20": {
+          "n": 352,
+          "mean": -0.2200065457173272,
+          "median": -0.08951761890988497
+        },
+        "faithfulness_del_high_minus_random_20": {
+          "n": 352,
+          "mean": 5.11197786487796,
+          "median": 4.8075480683735865
+        },
+        "faithfulness_ins_high_20": {
+          "n": 352,
+          "mean": 7.475553580408147,
+          "median": 7.584307612203169
+        },
+        "faithfulness_ins_random_20": {
+          "n": 352,
+          "mean": 4.538980375383706,
+          "median": 4.477750877615489
+        },
+        "faithfulness_ins_high_minus_random_20": {
+          "n": 352,
+          "mean": 2.936573205024442,
+          "median": 2.7500892371963683
+        },
+        "mean_stability_cosine": {
+          "n": 352,
+          "mean": 0.9747153558224052,
+          "median": 0.9777819988094834
+        },
+        "mean_stability_pearson": {
+          "n": 352,
+          "mean": 0.9609519461541655,
+          "median": 0.9655660176672816
+        },
+        "mean_stability_top20_iou": {
+          "n": 352,
+          "mean": 0.8308042326576316,
+          "median": 0.8361192170041436
+        },
+        "stability_prediction_flip_count": {
+          "n": 352,
+          "mean": 0.005681818181818182,
+          "median": 0.0
+        },
+        "explanation_shape_uncertainty": {
+          "n": 352,
+          "mean": 0.011686346757414867,
+          "median": 0.011244488880038261
+        },
+        "explanation_raw_attribution_std": {
+          "n": 352,
+          "mean": 0.006902035675011575,
+          "median": 0.00676208920776844
+        },
+        "explanation_mc_class_flip_rate": {
+          "n": 352,
+          "mean": 0.0015625,
+          "median": 0.0
+        },
+        "explanation_mean_cosine_to_first": {
+          "n": 352,
+          "mean": 0.9916434370667411,
+          "median": 0.9927182522283485
+        }
+      }
+    }
+  },
+  "spearman_correlations": [
+    {
+      "x": "mc_predictive_entropy",
+      "y": "explanation_shape_uncertainty",
+      "n": 1374,
+      "spearman_rho": -0.20465363619816102,
+      "unadjusted_p": 1.85481338843385e-14,
+      "bh_fdr_p": 3.09135564738975e-14
+    },
+    {
+      "x": "mc_predictive_entropy",
+      "y": "faithfulness_del_high_minus_random_20",
+      "n": 1374,
+      "spearman_rho": -0.07317806567775313,
+      "unadjusted_p": 0.00665366883317743,
+      "bh_fdr_p": 0.008317086041471787
+    },
+    {
+      "x": "mc_predictive_entropy",
+      "y": "mean_stability_cosine",
+      "n": 1374,
+      "spearman_rho": -0.024761585167621034,
+      "unadjusted_p": 0.3590611830897762,
+      "bh_fdr_p": 0.3590611830897762
+    },
+    {
+      "x": "explanation_shape_uncertainty",
+      "y": "mean_stability_cosine",
+      "n": 1374,
+      "spearman_rho": -0.476415190365314,
+      "unadjusted_p": 9.042132731212329e-79,
+      "bh_fdr_p": 4.521066365606165e-78
+    },
+    {
+      "x": "explanation_shape_uncertainty",
+      "y": "faithfulness_del_high_minus_random_20",
+      "n": 1374,
+      "spearman_rho": -0.27847602040949093,
+      "unadjusted_p": 6.852616127042162e-26,
+      "bh_fdr_p": 1.7131540317605405e-25
+    }
+  ],
+  "exploratory_error_discrimination_auc": {
+    "mc_predictive_entropy": 0.9572875272400974,
+    "calibrated_confidence": 0.9593641840789642,
+    "explanation_shape_uncertainty": 0.3463658505319831,
+    "mean_stability_cosine": 0.37272144596846557,
+    "faithfulness_del_high_minus_random_20": 0.5578002820151262
+  },
+  "source_checkpoint_sha256": "8a4cc515b0407c699bcdaaf3c1f1a7bc4af3cfe592e3eab739db5d092e9eeb37",
+  "limitations": [
+    "Exploratory post-hoc analysis on previously inspected V9 test set; not an untouched external validation.",
+    "Near-duplicate grouping was performed, but patient identities are unavailable; patient independence is not established.",
+    "Faithfulness compares fixed-class margin changes under 16x16 patch blur deletion/insertion; masking creates artificial inputs.",
+    "Higher deletion/insertion scores do not prove tumour localization or clinical correctness.",
+    "The HiResCAM theoretical guarantees do not directly establish faithfulness for this particular EfficientNet-B4 architecture.",
+    "Stability uses fixed small image changes, not comprehensive robustness to clinical acquisition variation.",
+    "Explanation uncertainty is per-pixel variation of independently max-normalized maps over 20 classifier-dropout passes.",
+    "Calibration and prediction uncertainty are re-used from saved V9 outputs and have not been re-fitted.",
+    "No clinical decision threshold or composite reliability score is validated; favourable measurements cannot verify correctness."
+  ],
+  "explanation_method": "HiResCAM",
+  "explanation_layer": "EfficientNet-B4 features[-4]",
+  "measurement_protocol": "Original V9 Step 22, with HiResCAM replacing Grad-CAM only"
+}
